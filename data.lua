@@ -31,4 +31,3 @@ function get_data(data_path)
 	
 	return train_data, valid_data, test_data
 end
-	

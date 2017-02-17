@@ -33,10 +33,10 @@ criterionAE = nn.AbsCriterion()
 if opt.augment == 1 then
 	Threads.serialization('threads.sharedserialize')
 	donkeys = Threads(
-	  opt.threads,
-	  function()
-	    require 'image'
-	  end
+		opt.threads,
+		function()
+			require 'image'
+		end
 	);
 	donkeys:specific(true)
 	print(color.green'\n====> Data augmentation')
